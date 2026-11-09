@@ -60,6 +60,16 @@ let jawabanMurid = {};
 let pilihanKiriAktif = null;
 let hasilPenilaian = null;
 
+// 3A. TIMER, PENGAWASAN TAB, DAN API GOOGLE SHEETS
+const BATAS_WAKTU_DETIK = 30 * 60;
+const URL_API_GOOGLE_SHEETS = "https://script.google.com/macros/s/AKfycbxE_4D1gY0RjJPE3KhckgRC5ZWKpQg--MRhUsOJmYpL5x4Zzf8DWotc1E73_eKT-AQ1/exec";
+let waktuMulai = null;
+let timerInterval = null;
+let jumlahPeringatanTab = 0;
+let kuisSedangBerjalan = false;
+let kuisSudahSelesai = false;
+let sedangMengirimNilai = false;
+
 const warnaPasangan = [
     "#16a34a",
     "#2563eb",
@@ -145,6 +155,11 @@ formIdentitas.addEventListener("submit", async (event) => {
         jawabanMurid = {};
         pilihanKiriAktif = null;
         hasilPenilaian = null;
+        waktuMulai = Date.now();
+        jumlahPeringatanTab = 0;
+        kuisSedangBerjalan = true;
+        kuisSudahSelesai = false;
+        mulaiTimer();
 
         hapusLapisanGaris();
         tampilkanHalamanKuis();
@@ -175,6 +190,16 @@ function tampilkanHalamanKuis() {
                 Absen ${identitas.nomorAbsen} |
                 Kelas ${identitas.kelas}
             </p>
+
+            <div id="panel-timer" style="
+                position:sticky;top:8px;z-index:100;
+                background:#eff6ff;border:1px solid #bfdbfe;
+                border-radius:10px;padding:12px;margin:15px 0;
+                text-align:center;
+            ">
+                <div style="font-size:12px;color:#475569;font-weight:bold;">SISA WAKTU PENILAIAN</div>
+                <div id="angka-timer" style="font-size:30px;font-weight:bold;color:#15803d;">30:00</div>
+            </div>
 
             <div id="area-soal"></div>
             <div id="tombol-navigasi"></div>
@@ -1018,10 +1043,12 @@ function hitungHasilAkhir() {
 
 // 22. SELESAI KUIS
 
-function selesaikanKuis() {
+function selesaikanKuis(otomatis = false) {
+    if (kuisSudahSelesai) return;
+
     const belumDijawab = hitungSoalBelumDijawab();
 
-    if (belumDijawab.length > 0) {
+    if (!otomatis && belumDijawab.length > 0) {
         const daftarNomor = belumDijawab.map(
             soal => soalAktif.indexOf(soal) + 1
         );
@@ -1039,16 +1066,134 @@ function selesaikanKuis() {
         return;
     }
 
-    const konfirmasi = confirm(
-        "Apakah kamu yakin ingin menyelesaikan penilaian?\n\n" +
-        "Jawaban tidak dapat diubah setelah kuis selesai."
-    );
+    if (!otomatis) {
+        const konfirmasi = confirm(
+            "Apakah kamu yakin ingin menyelesaikan penilaian?\n\n" +
+            "Jawaban tidak dapat diubah setelah kuis selesai."
+        );
+        if (!konfirmasi) return;
+    }
 
-    if (!konfirmasi) return;
-
+    kuisSudahSelesai = true;
+    kuisSedangBerjalan = false;
+    hentikanTimer();
     hasilPenilaian = hitungHasilAkhir();
-
     tampilkanHalamanHasil();
+    kirimNilaiKeGoogleSheets();
+}
+
+
+// 22A. TIMER 30 MENIT DAN DETEKSI PERPINDAHAN TAB
+function formatWaktu(detik) { 
+    const menit = Math.floor(detik / 60);
+    const sisaDetik = detik % 60;
+    return String(menit).padStart(2, "0") + ":" + String(sisaDetik).padStart(2, "0");
+}
+
+function mulaiTimer() {
+    hentikanTimer();
+    perbaruiTampilanTimer();
+    timerInterval = setInterval(() => {
+        if (!kuisSedangBerjalan || !waktuMulai) return;
+        const terpakai = Math.floor((Date.now() - waktuMulai) / 1000);
+        if (terpakai >= BATAS_WAKTU_DETIK) {
+            hentikanTimer();
+            alert("Waktu penilaian 30 menit telah habis. Jawaban yang sudah diisi akan dinilai.");
+            selesaikanKuis(true);
+            return;
+        }
+        perbaruiTampilanTimer();
+    }, 1000);
+}
+
+function hentikanTimer() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
+}
+
+function perbaruiTampilanTimer() {
+    const elemen = document.getElementById("angka-timer");
+    if (!elemen || !waktuMulai) return;
+    const terpakai = Math.floor((Date.now() - waktuMulai) / 1000);
+    const sisa = Math.max(0, BATAS_WAKTU_DETIK - terpakai);
+    elemen.textContent = formatWaktu(sisa);
+    elemen.style.color = sisa <= 300 ? "#dc2626" : sisa <= 600 ? "#d97706" : "#15803d";
+}
+
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden && kuisSedangBerjalan && !kuisSudahSelesai) {
+        jumlahPeringatanTab++;
+    } else if (!document.hidden && kuisSedangBerjalan && !kuisSudahSelesai && jumlahPeringatanTab > 0) {
+        alert("Kamu meninggalkan halaman penilaian. Jangan membuka tab lain selama pengerjaan.");
+    }
+});
+
+// 22B. MENGIRIM HASIL PENILAIAN KE GOOGLE SHEETS
+function hitungRincianSkor() {
+    const rincian = {
+        skorPG: 0,
+        skorBenarSalah: 0,
+        skorMenjodohkan: 0,
+        skorPGKompleks: 0,
+        jumlahBenar: 0
+    };
+
+    soalAktif.forEach(soal => {
+        const hasil = nilaiJawaban(soal);
+        if (soal.type === "pilihan_ganda") rincian.skorPG += hasil.nilai;
+        if (soal.type === "benar_salah") rincian.skorBenarSalah += hasil.nilai;
+        if (soal.type === "menjodohkan") rincian.skorMenjodohkan += hasil.nilai;
+        if (soal.type === "pilihan_ganda_kompleks") rincian.skorPGKompleks += hasil.nilai;
+        rincian.jumlahBenar += hasil.rincian.filter(item => item.benar).length;
+    });
+    return rincian;
+}
+
+async function kirimNilaiKeGoogleSheets() {
+    if (sedangMengirimNilai) return;
+    sedangMengirimNilai = true;
+
+    const identitas = JSON.parse(sessionStorage.getItem("identitasMurid"));
+    const rincian = hitungRincianSkor();
+    const durasi = waktuMulai ? Math.min(BATAS_WAKTU_DETIK, Math.floor((Date.now() - waktuMulai) / 1000)) : 0;
+
+    const dataNilai = {
+        nama: identitas.nama,
+        absen: identitas.nomorAbsen,
+        kelas: identitas.kelas,
+        mataPelajaran: "IPAS",
+        paket: identitas.paket.replace("-", " "),
+        nilaiAkhir: hasilPenilaian.nilaiAkhir,
+        skorDiperoleh: hasilPenilaian.totalNilai,
+        skorMaksimal: hasilPenilaian.totalMaksimal,
+        skorPG: rincian.skorPG,
+        skorBenarSalah: rincian.skorBenarSalah,
+        skorMenjodohkan: rincian.skorMenjodohkan,
+        skorPGKompleks: rincian.skorPGKompleks,
+        jumlahBenar: rincian.jumlahBenar,
+        durasi: durasi,
+        peringatanPindahTab: jumlahPeringatanTab
+    };
+
+    try {
+        // text/plain menghindari preflight CORS; no-cors berarti browser tidak dapat membaca respons server.
+        await fetch(URL_API_GOOGLE_SHEETS, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(dataNilai)
+        });
+        const status = document.getElementById("status-pengiriman-nilai");
+        if (status) status.textContent = "Nilai sedang dikirim ke rekap guru. Pastikan hasil tercatat di Google Sheets.";
+    } catch (error) {
+        console.error("Pengiriman nilai gagal:", error);
+        const status = document.getElementById("status-pengiriman-nilai");
+        if (status) status.textContent = "Pengiriman nilai mengalami kendala. Silakan beri tahu guru.";
+    } finally {
+        sedangMengirimNilai = false;
+    }
 }
 
 
@@ -1155,6 +1300,10 @@ function tampilkanHalamanHasil() {
                     <h2>${hasil.totalMaksimal}</h2>
                 </div>
             </div>
+
+            <p id="status-pengiriman-nilai" style="font-size:13px;color:#475569;text-align:center;margin:12px 0;">
+                Mengirim hasil penilaian ke rekap guru...
+            </p>
 
             <h3>Evaluasi dan Pembahasan</h3>
 
