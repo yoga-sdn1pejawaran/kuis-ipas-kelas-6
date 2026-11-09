@@ -1,0 +1,288 @@
+
+/* =========================================
+   LATIHAN ASAS 1 IPAS KELAS 6
+   SD NEGERI 1 PEJAWARAN
+   ========================================= */
+
+/* WARNA */
+
+:root {
+    --primary: #173B65;
+    --secondary: #2563A6;
+    --background: #F3F6FA;
+    --white: #FFFFFF;
+    --text: #263445;
+    --muted: #718096;
+    --border: #DCE4ED;
+    --accent: #FFD166;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center;
+    color: var(--white);
+
+    background: linear-gradient(
+        135deg,
+        #173B65,
+        #2563A6
+    );
+
+    border-radius: 0 0 22px 22px;
+
+    box-shadow: 0 5px 18px rgba(23, 59, 101, 0.15);
+}
+
+/* JUDUL */
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+/* BARIS PERTAMA */
+
+.judul-utama {
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+/* BARIS KEDUA */
+
+.judul-mapel {
+    display: block;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #FFD166;
+}
+
+/* BARIS KETIGA */
+
+.judul-kelas {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+/* IDENTITAS SEKOLAH */
+
+.identitas-sekolah p {
+    font-size: 13px;
+    color: #DCEBFA;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   KONTEN UTAMA
+   ========================================= */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   KARTU IDENTITAS
+   ========================================= */
+
+.welcome-card {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+.welcome-card h2 {
+    color: var(--primary);
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   FORMULIR
+   ========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    display: block;
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    font-size: 15px;
+    color: var(--text);
+    background: #FFFFFF;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 166, 0.12);
+}
+
+.form-group input[readonly] {
+    background: #EDF2F7;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: default;
+}
+
+/* =========================================
+   TOMBOL MULAI
+   ========================================= */
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+
+    background: var(--primary);
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    text-align: center;
+    color: var(--muted);
+
+    font-size: 12px;
+    line-height: 1.8;
+
+    margin: 25px 0;
+}
+
+/* =========================================
+   RESPONSIVE - HP
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 30px 14px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .judul-utama {
+        font-size: 19px;
+    }
+
+    .judul-mapel {
+        font-size: 36px;
+    }
+
+    .judul-kelas {
+        font-size: 21px;
+    }
+
+    .identitas-sekolah p {
+        font-size: 11px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 14px;
+    }
+
+    .welcome-card {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .welcome-card h2 {
+        font-size: 21px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 15px;
+    }
+}
