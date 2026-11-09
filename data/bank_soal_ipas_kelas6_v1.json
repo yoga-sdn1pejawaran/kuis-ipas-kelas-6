@@ -1,16 +1,15 @@
 {
   "schema_version": "1.0",
-  "bank_id": "BANK-IPAS-KELAS6-ASAS-GASAL-2026",
-  "title": "Bank Soal IPAS Kelas VI Semester 1",
+  "bank_id": "BANK-IPAS-KELAS6-ASAS-GASAL-2026-PAKET1-FINAL",
+  "title": "Bank Soal Latihan IPAS Kelas VI Semester 1 - Paket 1 Final",
   "school_year": "2026/2027",
   "subject": "Ilmu Pengetahuan Alam dan Sosial (IPAS)",
   "grade": 6,
   "semester": 1,
   "source_reference": [
-    "KISI-KISI SOAL IPAS ASAS GASAL 2026/2027",
-    "SOAL IPAS KELAS 6 ASAS GASAL 2026/2027"
+    "KISI-KISI SOAL IPAS ASAS GASAL 2026/2027"
   ],
-  "notes": "Bank soal latihan yang diadaptasi dari cakupan kisi-kisi ASAS. Soal uraian dan unjuk kerja pada naskah referensi tidak dimasukkan sebagai tipe soal; indikatornya diadaptasi ke bentuk objektif jika memungkinkan.",
+  "notes": "Soal latihan paralel berdasarkan indikator kisi-kisi. Redaksi dan konteks berbeda dari naskah ASAS resmi. Indikator uraian diadaptasi ke bentuk objektif untuk penilaian otomatis. Unjuk kerja poster tetap diberikan sebagai tugas praktik terpisah. Koreksi: jawaban nomor 17 menggunakan istilah Eurasia agar konsisten dengan penjelasan.",
   "scoring": {
     "pilihan_ganda": {
       "method": "all_or_nothing",
@@ -56,29 +55,29 @@
       "topic": "Sistem rangka tubuh manusia",
       "difficulty": "mudah",
       "type": "pilihan_ganda",
-      "question": "Tulang tengkorak merupakan bagian rangka manusia yang memiliki fungsi utama untuk melindungi ....",
+      "question": "Tulang rusuk terutama berfungsi melindungi ....",
       "options": [
         {
           "id": "A",
-          "text": "Jantung"
+          "text": "otak dan mata"
         },
         {
           "id": "B",
-          "text": "Paru-paru"
+          "text": "jantung dan paru-paru"
         },
         {
           "id": "C",
-          "text": "Otak"
+          "text": "lambung dan usus"
         },
         {
           "id": "D",
-          "text": "Lambung"
+          "text": "otot lengan dan kaki"
         }
       ],
       "answer": [
-        "C"
+        "B"
       ],
-      "explanation": "Tulang tengkorak melindungi otak dari benturan dan cedera.",
+      "explanation": "Tulang rusuk membentuk rongga dada yang melindungi jantung dan paru-paru.",
       "score_max": 2
     },
     {
@@ -87,29 +86,29 @@
       "topic": "Otot dan fungsinya",
       "difficulty": "sedang",
       "type": "pilihan_ganda",
-      "question": "Dimas sedang mengangkat sebuah tas dengan cara menekuk siku. Pada saat gerakan tersebut terjadi, kerja otot bisep dan trisep adalah ....",
+      "question": "Saat siku diluruskan untuk mendorong pintu, kerja otot bisep dan trisep adalah ....",
       "options": [
         {
           "id": "A",
-          "text": "Bisep berkontraksi, trisep relaksasi."
+          "text": "bisep berkontraksi, trisep relaksasi"
         },
         {
           "id": "B",
-          "text": "Bisep relaksasi, trisep berkontraksi."
+          "text": "bisep relaksasi, trisep berkontraksi"
         },
         {
           "id": "C",
-          "text": "Bisep dan trisep sama-sama relaksasi."
+          "text": "keduanya relaksasi"
         },
         {
           "id": "D",
-          "text": "Bisep dan trisep sama-sama berkontraksi."
+          "text": "keduanya tidak berperan"
         }
       ],
       "answer": [
-        "A"
+        "B"
       ],
-      "explanation": "Ketika siku menekuk, otot bisep berkontraksi dan otot trisep mengalami relaksasi. Keduanya bekerja secara antagonis.",
+      "explanation": "Saat siku diluruskan, trisep berkontraksi dan bisep relaksasi.",
       "score_max": 2
     },
     {
@@ -118,41 +117,41 @@
       "topic": "Hubungan rangka, otot, saraf, dan peredaran darah",
       "difficulty": "hots",
       "type": "pilihan_ganda_kompleks",
-      "stimulus": "Raka mengangkat sebuah galon dari lantai. Sebelum mengangkatnya, Raka melihat posisi galon. Otaknya kemudian mengirimkan perintah kepada otot lengan sehingga siku menekuk. Selama melakukan aktivitas tersebut, jantung memompa darah untuk memenuhi kebutuhan otot.",
-      "question": "Pilih tepat 3 pernyataan yang benar!",
+      "stimulus": "Nanda melihat bola, menendangnya, lalu berlari mengejar bola.",
+      "question": "Pilih tepat 3 pernyataan yang benar tentang kerja organ tubuh Nanda.",
       "options": [
         {
           "id": "A",
-          "text": "Otak mengirimkan perintah melalui saraf motorik kepada otot lengan."
+          "text": "Mata menerima rangsangan yang diolah sistem saraf."
         },
         {
           "id": "B",
-          "text": "Tulang dapat bergerak sendiri tanpa bantuan otot."
+          "text": "Otot kaki menarik tulang sehingga tungkai bergerak."
         },
         {
           "id": "C",
-          "text": "Otot membutuhkan oksigen yang dibawa oleh darah."
+          "text": "Darah mengangkut oksigen dan zat makanan ke otot."
         },
         {
           "id": "D",
-          "text": "Sendi siku termasuk sendi engsel yang memungkinkan gerakan menekuk dan meluruskan."
+          "text": "Tulang tungkai menghasilkan gerak tanpa otot."
         },
         {
           "id": "E",
-          "text": "Saraf sensorik membawa perintah dari otak menuju otot."
+          "text": "Saraf motorik membawa informasi dari otot menuju otak."
         }
       ],
       "answer": [
         "A",
-        "C",
-        "D"
+        "B",
+        "C"
       ],
       "selection": {
         "min": 3,
         "max": 3,
         "exact": 3
       },
-      "explanation": "A benar karena saraf motorik membawa perintah menuju otot. B salah karena tulang memerlukan bantuan otot untuk bergerak. C benar karena otot membutuhkan oksigen yang dibawa darah. D benar karena siku merupakan sendi engsel. E salah karena saraf sensorik membawa informasi rangsangan menuju sistem saraf pusat.",
+      "explanation": "Mata menerima rangsangan, otot menggerakkan tulang, dan darah memasok oksigen serta zat makanan.",
       "score_max": 6
     },
     {
@@ -161,50 +160,50 @@
       "topic": "Macam-macam sendi",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan jenis sendi dengan karakteristik gerakannya!",
+      "question": "Pasangkan lokasi tubuh dengan jenis sendi yang sesuai.",
       "left": [
         {
           "id": "1",
-          "text": "Sendi engsel"
+          "text": "Antara tulang paha dan panggul"
         },
         {
           "id": "2",
-          "text": "Sendi peluru"
+          "text": "Antara tulang lengan atas dan hasta"
         },
         {
           "id": "3",
-          "text": "Sendi putar"
+          "text": "Antara tulang atlas dan aksis"
         },
         {
           "id": "4",
-          "text": "Sendi pelana"
+          "text": "Pangkal ibu jari"
         }
       ],
       "right": [
         {
           "id": "A",
-          "text": "Memungkinkan gerakan ke berbagai arah, seperti pada bahu"
+          "text": "Sendi putar"
         },
         {
           "id": "B",
-          "text": "Memungkinkan gerakan satu arah, seperti pada siku"
+          "text": "Sendi peluru"
         },
         {
           "id": "C",
-          "text": "Memungkinkan gerakan memutar, seperti pada leher"
+          "text": "Sendi engsel"
         },
         {
           "id": "D",
-          "text": "Memungkinkan gerakan dua arah, seperti pada pangkal ibu jari"
+          "text": "Sendi pelana"
         }
       ],
       "answer": {
         "1": "B",
-        "2": "A",
-        "3": "C",
+        "2": "C",
+        "3": "A",
         "4": "D"
       },
-      "explanation": "Sendi engsel bergerak satu arah, peluru ke berbagai arah, putar memungkinkan rotasi, dan pelana memungkinkan gerak dua arah.",
+      "explanation": "Panggul adalah sendi peluru, siku engsel, leher putar, dan pangkal ibu jari pelana.",
       "score_max": 4,
       "score_per_pair": 1
     },
@@ -214,26 +213,26 @@
       "topic": "Gerak refleks",
       "difficulty": "hots",
       "type": "benar_salah",
-      "stimulus": "Dina tidak sengaja menyentuh panci panas. Tangannya segera ditarik menjauh sebelum ia menyadari rasa panas tersebut.",
+      "stimulus": "Ketika kaki Riko menginjak benda tajam, ia segera mengangkat kakinya sebelum menyadari rasa sakit.",
       "question": "Tentukan benar atau salah setiap pernyataan berikut!",
       "statements": [
         {
           "id": "A",
-          "text": "Gerak refleks dapat diproses melalui sumsum tulang belakang tanpa menunggu perintah sadar dari otak.",
+          "text": "Reseptor menerima rangsangan dari benda tajam.",
           "answer": true
         },
         {
           "id": "B",
-          "text": "Gerakan menarik tangan melibatkan kerja otot, tulang, dan sendi.",
+          "text": "Sumsum tulang belakang dapat menjadi pusat respons refleks cepat.",
           "answer": true
         },
         {
           "id": "C",
-          "text": "Saraf sensorik yang rusak tidak akan memengaruhi penerimaan rangsangan panas.",
+          "text": "Respons refleks selalu menunggu keputusan sadar otak besar.",
           "answer": false
         }
       ],
-      "explanation": "Gerak refleks merupakan respons cepat terhadap rangsangan. Jalur refleks melibatkan reseptor, saraf sensorik, pusat refleks di sumsum tulang belakang, saraf motorik, dan efektor.",
+      "explanation": "Gerak refleks merupakan respons cepat melalui jalur saraf refleks dengan pusat antara lain sumsum tulang belakang.",
       "score_max": 6,
       "score_per_statement": 2
     },
@@ -243,11 +242,11 @@
       "topic": "Bagian sistem saraf",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan bagian sistem saraf dengan fungsinya!",
+      "question": "Pasangkan bagian sistem saraf dengan perannya.",
       "left": [
         {
           "id": "1",
-          "text": "Otak"
+          "text": "Otak besar"
         },
         {
           "id": "2",
@@ -265,28 +264,28 @@
       "right": [
         {
           "id": "A",
-          "text": "Membawa perintah dari sistem saraf pusat menuju otot"
+          "text": "Membawa perintah dari pusat saraf ke efektor"
         },
         {
           "id": "B",
-          "text": "Pusat pengatur dan pengendali aktivitas tubuh"
+          "text": "Mengolah informasi dan aktivitas sadar"
         },
         {
           "id": "C",
-          "text": "Menghubungkan otak dengan saraf tubuh dan menjadi pusat gerak refleks"
+          "text": "Meneruskan rangsangan ke pusat saraf"
         },
         {
           "id": "D",
-          "text": "Membawa rangsangan dari alat indra menuju sistem saraf pusat"
+          "text": "Jalur penghubung dan pusat gerak refleks"
         }
       ],
       "answer": {
         "1": "B",
-        "2": "C",
-        "3": "D",
+        "2": "D",
+        "3": "C",
         "4": "A"
       },
-      "explanation": "Otak mengatur aktivitas tubuh; sumsum tulang belakang menjadi jalur penghubung sekaligus pusat refleks; saraf sensorik membawa informasi menuju sistem saraf pusat; saraf motorik membawa perintah menuju efektor.",
+      "explanation": "Otak mengolah informasi, sumsum tulang belakang menjadi jalur penghubung dan pusat refleks, saraf sensorik membawa rangsangan masuk, saraf motorik membawa perintah keluar.",
       "score_max": 4,
       "score_per_pair": 1
     },
@@ -296,29 +295,29 @@
       "topic": "Hubungan otot dan peredaran darah",
       "difficulty": "hots",
       "type": "pilihan_ganda",
-      "question": "Setelah berlari selama 15 menit, jantung Bayu berdetak lebih cepat daripada biasanya. Napasnya juga menjadi lebih cepat. Mengapa hal tersebut terjadi?",
+      "question": "Setelah bersepeda menanjak, denyut nadi Mira lebih cepat. Hal ini terjadi karena ....",
       "options": [
         {
           "id": "A",
-          "text": "Karena otot berhenti bekerja sehingga darah menumpuk di jantung."
+          "text": "jantung memperlambat aliran darah"
         },
         {
           "id": "B",
-          "text": "Karena otot membutuhkan lebih banyak oksigen dan zat makanan sehingga jantung meningkatkan pemompaan darah."
+          "text": "otot membutuhkan lebih banyak oksigen dan zat makanan"
         },
         {
           "id": "C",
-          "text": "Karena jantung harus menghentikan aliran darah menuju organ lain."
+          "text": "darah berhenti mengalir ke organ lain"
         },
         {
           "id": "D",
-          "text": "Karena paru-paru tidak lagi membutuhkan oksigen saat berlari."
+          "text": "paru-paru berhenti bertukar gas"
         }
       ],
       "answer": [
         "B"
       ],
-      "explanation": "Ketika berlari, otot bekerja lebih aktif dan membutuhkan lebih banyak oksigen serta zat makanan. Jantung meningkatkan frekuensi pemompaan darah untuk memenuhi kebutuhan tersebut. Napas juga meningkat untuk menunjang pertukaran gas.",
+      "explanation": "Otot aktif membutuhkan lebih banyak oksigen dan zat makanan sehingga jantung memompa darah lebih cepat.",
       "score_max": 2
     },
     {
@@ -327,29 +326,29 @@
       "topic": "Gangguan sistem saraf",
       "difficulty": "hots",
       "type": "pilihan_ganda",
-      "question": "Pak Joko mengalami kecelakaan yang menyebabkan sumsum tulang belakang bagian pinggangnya mengalami kerusakan. Akibatnya, kedua kakinya sulit digerakkan meskipun tulang dan otot kakinya masih normal. Bagian fungsi tubuh yang paling mungkin terganggu adalah ....",
+      "question": "Jika saraf motorik yang menuju otot tangan mengalami kerusakan, akibat yang paling mungkin adalah ....",
       "options": [
         {
           "id": "A",
-          "text": "Kemampuan tulang kaki menopang tubuh."
+          "text": "tangan kesulitan bergerak sesuai perintah"
         },
         {
           "id": "B",
-          "text": "Penyampaian perintah dari otak menuju otot kaki melalui jalur saraf."
+          "text": "tulang tangan bertambah panjang"
         },
         {
           "id": "C",
-          "text": "Kemampuan jantung memompa darah ke seluruh tubuh."
+          "text": "jantung berhenti menerima darah"
         },
         {
           "id": "D",
-          "text": "Bentuk sendi lutut sebagai sendi engsel."
+          "text": "kulit tidak dapat berkeringat"
         }
       ],
       "answer": [
-        "B"
+        "A"
       ],
-      "explanation": "Sumsum tulang belakang merupakan jalur penting penghantaran impuls saraf antara otak dan tubuh. Kerusakannya dapat mengganggu penyampaian perintah gerak menuju otot kaki.",
+      "explanation": "Saraf motorik membawa perintah menuju otot sehingga kerusakannya dapat mengganggu gerakan.",
       "score_max": 2
     },
     {
@@ -358,7 +357,7 @@
       "topic": "Bagian-bagian jantung",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan bagian jantung dengan fungsinya!",
+      "question": "Pasangkan ruang jantung dengan tugas aliran darahnya.",
       "left": [
         {
           "id": "1",
@@ -380,28 +379,28 @@
       "right": [
         {
           "id": "A",
-          "text": "Memompa darah kaya oksigen ke seluruh tubuh"
-        },
-        {
-          "id": "B",
-          "text": "Menerima darah miskin oksigen dari seluruh tubuh"
-        },
-        {
-          "id": "C",
           "text": "Memompa darah menuju paru-paru"
         },
         {
+          "id": "B",
+          "text": "Menerima darah dari paru-paru"
+        },
+        {
+          "id": "C",
+          "text": "Memompa darah ke seluruh tubuh"
+        },
+        {
           "id": "D",
-          "text": "Menerima darah kaya oksigen dari paru-paru"
+          "text": "Menerima darah dari seluruh tubuh"
         }
       ],
       "answer": {
-        "1": "B",
-        "2": "C",
-        "3": "D",
-        "4": "A"
+        "1": "D",
+        "2": "A",
+        "3": "B",
+        "4": "C"
       },
-      "explanation": "Serambi menerima darah, sedangkan bilik memompa darah keluar dari jantung. Sisi kanan berhubungan dengan peredaran menuju paru-paru dan sisi kiri dengan peredaran ke seluruh tubuh.",
+      "explanation": "Serambi menerima darah, bilik memompa darah keluar; sisi kanan menuju paru-paru dan kiri ke seluruh tubuh.",
       "score_max": 4,
       "score_per_pair": 1
     },
@@ -411,15 +410,15 @@
       "topic": "Pembuluh darah",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan organ peredaran darah dengan fungsinya!",
+      "question": "Pasangkan jenis pembuluh atau bagian dengan cirinya.",
       "left": [
         {
           "id": "1",
-          "text": "Vena"
+          "text": "Arteri"
         },
         {
           "id": "2",
-          "text": "Arteri"
+          "text": "Vena"
         },
         {
           "id": "3",
@@ -427,34 +426,34 @@
         },
         {
           "id": "4",
-          "text": "Jantung"
+          "text": "Katup vena"
         }
       ],
       "right": [
         {
           "id": "A",
-          "text": "Membawa darah menjauhi jantung"
+          "text": "Tempat pertukaran zat dengan jaringan"
         },
         {
           "id": "B",
-          "text": "Membawa darah kembali menuju jantung"
+          "text": "Membawa darah menuju jantung"
         },
         {
           "id": "C",
-          "text": "Tempat pertukaran oksigen, karbon dioksida, dan zat lainnya dengan jaringan"
+          "text": "Mencegah aliran balik darah"
         },
         {
           "id": "D",
-          "text": "Memompa darah ke seluruh tubuh dan paru-paru"
+          "text": "Membawa darah menjauhi jantung"
         }
       ],
       "answer": {
-        "1": "B",
-        "2": "A",
-        "3": "C",
-        "4": "D"
+        "1": "D",
+        "2": "B",
+        "3": "A",
+        "4": "C"
       },
-      "explanation": "Vena membawa darah menuju jantung, arteri menjauhi jantung, kapiler menjadi tempat pertukaran zat, dan jantung bertugas memompa darah.",
+      "explanation": "Arteri menjauhi jantung, vena menuju jantung, kapiler tempat pertukaran zat, katup menjaga aliran satu arah.",
       "score_max": 4,
       "score_per_pair": 1
     },
@@ -464,110 +463,110 @@
       "topic": "Kedatangan bangsa asing",
       "difficulty": "mudah",
       "type": "pilihan_ganda",
-      "question": "Tujuan utama bangsa Eropa datang ke Indonesia pada awalnya adalah mencari ....",
+      "question": "Komoditas Nusantara yang sangat dicari pedagang Eropa pada masa penjelajahan samudra adalah ....",
       "options": [
         {
           "id": "A",
-          "text": "Emas dan perak."
+          "text": "batu bara dan minyak"
         },
         {
           "id": "B",
-          "text": "Rempah-rempah."
+          "text": "cengkih dan pala"
         },
         {
           "id": "C",
-          "text": "Tenaga kerja."
+          "text": "beras dan jagung"
         },
         {
           "id": "D",
-          "text": "Wilayah pertanian."
+          "text": "kayu jati dan rotan"
         }
       ],
       "answer": [
         "B"
       ],
-      "explanation": "Rempah-rempah Indonesia memiliki nilai ekonomi tinggi di Eropa. Hal tersebut menjadi salah satu alasan utama kedatangan bangsa Eropa ke Nusantara.",
+      "explanation": "Cengkih dan pala merupakan rempah bernilai tinggi dalam perdagangan dunia.",
       "score_max": 2
     },
     {
       "id": "IPAS6-012",
       "number": 12,
-      "topic": "Tokoh pahlawan",
+      "topic": "Tokoh pahlawan dan perjuangannya",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan tokoh pejuang dengan perjuangannya!",
+      "question": "Pasangkan tokoh dengan perjuangannya.",
       "left": [
         {
           "id": "1",
-          "text": "Sultan Hasanuddin"
+          "text": "Cut Nyak Dien"
         },
         {
           "id": "2",
-          "text": "Pattimura"
+          "text": "Pangeran Antasari"
         },
         {
           "id": "3",
-          "text": "Pangeran Diponegoro"
+          "text": "Sisingamangaraja XII"
         },
         {
           "id": "4",
-          "text": "Tuanku Imam Bonjol"
+          "text": "Ki Hajar Dewantara"
         }
       ],
       "right": [
         {
           "id": "A",
-          "text": "Perang Padri di Sumatera Barat"
+          "text": "Perjuangan di Kalimantan Selatan"
         },
         {
           "id": "B",
-          "text": "Perlawanan rakyat Maluku terhadap Belanda"
+          "text": "Perjuangan rakyat Aceh"
         },
         {
           "id": "C",
-          "text": "Perang Jawa (1825–1830)"
+          "text": "Perjuangan di Tanah Batak"
         },
         {
           "id": "D",
-          "text": "Perlawanan Makassar terhadap VOC"
+          "text": "Perjuangan melalui pendidikan"
         }
       ],
       "answer": {
-        "1": "D",
-        "2": "B",
+        "1": "B",
+        "2": "A",
         "3": "C",
-        "4": "A"
+        "4": "D"
       },
-      "explanation": "Sultan Hasanuddin dikenal dengan perlawanan terhadap VOC, Pattimura di Maluku, Diponegoro di Jawa, dan Imam Bonjol dalam Perang Padri.",
+      "explanation": "Cut Nyak Dien berjuang di Aceh, Antasari di Kalimantan Selatan, Sisingamangaraja XII di Tanah Batak, dan Ki Hajar Dewantara melalui pendidikan.",
       "score_max": 4,
       "score_per_pair": 1
     },
     {
       "id": "IPAS6-013",
       "number": 13,
-      "topic": "Perjuangan sebelum dan sesudah kesadaran nasional",
+      "topic": "Perubahan bentuk perjuangan bangsa",
       "difficulty": "hots",
       "type": "benar_salah",
-      "stimulus": "Sebelum muncul kesadaran nasional, perjuangan melawan penjajah lebih banyak dilakukan secara kedaerahan. Setelah berkembangnya organisasi pergerakan nasional, perjuangan mulai dilakukan melalui pendidikan, organisasi, dan persatuan bangsa.",
+      "stimulus": "Sebelum abad ke-20 banyak perlawanan bersifat kedaerahan. Kemudian organisasi nasional berkembang melalui pendidikan, pers, dan kegiatan organisasi.",
       "question": "Tentukan benar atau salah setiap pernyataan berikut!",
       "statements": [
         {
           "id": "A",
-          "text": "Perjuangan kedaerahan lebih mudah dipatahkan karena belum terkoordinasi secara nasional.",
+          "text": "Organisasi modern membantu menghubungkan perjuangan berbagai wilayah.",
           "answer": true
         },
         {
           "id": "B",
-          "text": "Setelah muncul kesadaran nasional, perjuangan hanya dilakukan melalui perang senjata.",
-          "answer": false
+          "text": "Pendidikan dan organisasi menjadi ciri berkembangnya kesadaran nasional.",
+          "answer": true
         },
         {
           "id": "C",
-          "text": "Persatuan menjadi salah satu kekuatan penting dalam perjuangan menuju kemerdekaan.",
-          "answer": true
+          "text": "Setelah organisasi nasional muncul, seluruh perjuangan bersenjata langsung berhenti.",
+          "answer": false
         }
       ],
-      "explanation": "Perjuangan nasional berkembang dengan menggabungkan kekuatan berbagai daerah melalui organisasi, pendidikan, dan persatuan, tidak hanya melalui pertempuran bersenjata.",
+      "explanation": "Kesadaran nasional mendorong perjuangan terorganisasi lintas daerah, tetapi tidak langsung menghentikan semua perlawanan bersenjata.",
       "score_max": 6,
       "score_per_statement": 2
     },
@@ -577,41 +576,41 @@
       "topic": "Sumpah Pemuda",
       "difficulty": "hots",
       "type": "pilihan_ganda_kompleks",
-      "stimulus": "Pada 28 Oktober 1928, pemuda dari berbagai organisasi daerah berkumpul dan mengikrarkan satu tanah air, satu bangsa, serta menjunjung bahasa persatuan, bahasa Indonesia.",
-      "question": "Pilih tepat 3 pernyataan yang benar!",
+      "stimulus": "Murid dari berbagai daerah menggunakan bahasa Indonesia untuk berdiskusi dan menyusun kegiatan bersama.",
+      "question": "Tindakan yang sejalan dengan semangat Sumpah Pemuda adalah .... (Pilih tepat 3.)",
       "options": [
         {
           "id": "A",
-          "text": "Para pemuda mengesampingkan perbedaan daerah untuk membangun persatuan."
+          "text": "mengutamakan persatuan di tengah perbedaan"
         },
         {
           "id": "B",
-          "text": "Sumpah Pemuda menunjukkan bahwa perjuangan tidak lagi membutuhkan persatuan."
+          "text": "menggunakan bahasa Indonesia sebagai bahasa bersama"
         },
         {
           "id": "C",
-          "text": "Bahasa Indonesia menjadi bahasa persatuan yang dapat menghubungkan pemuda dari berbagai daerah."
+          "text": "menghargai kesenian daerah lain"
         },
         {
           "id": "D",
-          "text": "Sumpah Pemuda menandai kembalinya perjuangan yang hanya berorientasi pada daerah masing-masing."
+          "text": "menganggap bahasa daerah harus dihapus"
         },
         {
           "id": "E",
-          "text": "Semangat Sumpah Pemuda memperkuat perjuangan menuju kemerdekaan Indonesia."
+          "text": "membatasi pertemanan dengan orang sedaerah"
         }
       ],
       "answer": [
         "A",
-        "C",
-        "E"
+        "B",
+        "C"
       ],
       "selection": {
         "min": 3,
         "max": 3,
         "exact": 3
       },
-      "explanation": "Sumpah Pemuda menjadi tonggak penting persatuan nasional. Pemuda menyadari bahwa perbedaan daerah tidak boleh menghalangi perjuangan bersama.",
+      "explanation": "Sumpah Pemuda menegaskan persatuan tanah air, bangsa, dan bahasa Indonesia tanpa menghapus penghargaan terhadap budaya daerah.",
       "score_max": 6
     },
     {
@@ -620,29 +619,29 @@
       "topic": "Keteladanan pahlawan",
       "difficulty": "hots",
       "type": "pilihan_ganda",
-      "question": "Dalam kegiatan kerja kelompok, Rani mengajak teman-temannya yang berasal dari suku berbeda untuk bekerja sama. Ia juga menghargai pendapat setiap anggota kelompok. Sikap Rani paling mencerminkan keteladanan ....",
+      "question": "Dalam rapat kelas, Sinta mengajak teman mendengarkan pendapat dan mencari kesepakatan demi kepentingan bersama. Sikapnya mencerminkan ....",
       "options": [
         {
           "id": "A",
-          "text": "Mengutamakan kepentingan pribadi daripada kelompok."
+          "text": "persatuan dan musyawarah"
         },
         {
           "id": "B",
-          "text": "Para pemuda dalam Sumpah Pemuda yang menjunjung persatuan dan menghargai perbedaan."
+          "text": "keinginan menang sendiri"
         },
         {
           "id": "C",
-          "text": "Menolak bekerja sama dengan orang yang berbeda daerah."
+          "text": "menghindari tanggung jawab"
         },
         {
           "id": "D",
-          "text": "Menganggap budaya sendiri lebih baik daripada budaya orang lain."
+          "text": "memisahkan diri dari kelompok"
         }
       ],
       "answer": [
-        "B"
+        "A"
       ],
-      "explanation": "Semangat Sumpah Pemuda mengajarkan persatuan, kerja sama, dan penghargaan terhadap keberagaman.",
+      "explanation": "Mengutamakan kepentingan bersama dan menghargai pendapat mencerminkan nilai persatuan.",
       "score_max": 2
     },
     {
@@ -651,29 +650,29 @@
       "topic": "Kronologi perjuangan menuju kemerdekaan",
       "difficulty": "hots",
       "type": "pilihan_ganda",
-      "question": "Perhatikan peristiwa berikut! (1) Pergerakan nasional melalui organisasi dan pendidikan berkembang. (2) Bangsa asing datang ke Indonesia untuk mencari rempah-rempah dan kemudian melakukan penjajahan. (3) Perjuangan rakyat dilakukan secara kedaerahan untuk melawan penjajah. (4) Bangsa Indonesia memproklamasikan kemerdekaan. Urutan perkembangan sejarah yang paling tepat adalah ....",
+      "question": "Urutkan peristiwa: (1) organisasi pergerakan nasional; (2) proklamasi; (3) kedatangan bangsa Eropa dan penjajahan; (4) perlawanan daerah.",
       "options": [
         {
           "id": "A",
-          "text": "1 – 2 – 3 – 4."
+          "text": "3–4–1–2"
         },
         {
           "id": "B",
-          "text": "2 – 3 – 1 – 4."
+          "text": "1–3–4–2"
         },
         {
           "id": "C",
-          "text": "3 – 1 – 2 – 4."
+          "text": "4–3–2–1"
         },
         {
           "id": "D",
-          "text": "2 – 1 – 4 – 3."
+          "text": "3–1–2–4"
         }
       ],
       "answer": [
-        "B"
+        "A"
       ],
-      "explanation": "Kedatangan bangsa asing dan penjajahan memunculkan perlawanan kedaerahan. Kesadaran nasional kemudian berkembang melalui organisasi dan pendidikan hingga akhirnya bangsa Indonesia memproklamasikan kemerdekaan.",
+      "explanation": "Kedatangan bangsa Eropa diikuti perlawanan daerah, perkembangan pergerakan nasional, lalu proklamasi.",
       "score_max": 2
     },
     {
@@ -682,29 +681,29 @@
       "topic": "Benua",
       "difficulty": "mudah",
       "type": "pilihan_ganda",
-      "question": "Benua yang memiliki wilayah paling luas di dunia adalah ....",
+      "question": "Asia dan Eropa secara daratan membentuk kawasan yang dikenal sebagai ....",
       "options": [
         {
           "id": "A",
-          "text": "Afrika."
+          "text": "Eurasia"
         },
         {
           "id": "B",
-          "text": "Asia."
+          "text": "Antarktika"
         },
         {
           "id": "C",
-          "text": "Eropa."
+          "text": "Oseania"
         },
         {
           "id": "D",
-          "text": "Amerika Utara."
+          "text": "Amerika"
         }
       ],
       "answer": [
-        "B"
+        "A"
       ],
-      "explanation": "Asia merupakan benua terluas di dunia dan memiliki jumlah penduduk terbesar.",
+      "explanation": "Asia dan Eropa merupakan kawasan daratan yang berkesinambungan dan sering disebut Eurasia.",
       "score_max": 2
     },
     {
@@ -713,29 +712,29 @@
       "topic": "Samudra",
       "difficulty": "mudah",
       "type": "pilihan_ganda",
-      "question": "Samudra yang memiliki wilayah paling luas di dunia adalah Samudra ....",
+      "question": "Samudra yang berada di antara Afrika, Asia, dan Australia adalah Samudra ....",
       "options": [
         {
           "id": "A",
-          "text": "Hindia."
+          "text": "Atlantik"
         },
         {
           "id": "B",
-          "text": "Atlantik."
+          "text": "Arktik"
         },
         {
           "id": "C",
-          "text": "Pasifik."
+          "text": "Hindia"
         },
         {
           "id": "D",
-          "text": "Arktik."
+          "text": "Pasifik"
         }
       ],
       "answer": [
         "C"
       ],
-      "explanation": "Samudra Pasifik merupakan samudra terluas di dunia.",
+      "explanation": "Samudra Hindia terletak di antara Afrika, Asia, dan Australia.",
       "score_max": 2
     },
     {
@@ -744,123 +743,123 @@
       "topic": "Bangunan ikonik dunia",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan bangunan ikonik dengan negara dan benua tempatnya berada!",
+      "question": "Pasangkan bangunan dengan negara tempatnya berada.",
       "left": [
         {
           "id": "1",
-          "text": "Menara Eiffel"
+          "text": "Taj Mahal"
         },
         {
           "id": "2",
-          "text": "Piramida Giza"
+          "text": "Colosseum"
         },
         {
           "id": "3",
-          "text": "Patung Liberty"
+          "text": "Christ the Redeemer"
         },
         {
           "id": "4",
-          "text": "Sydney Opera House"
+          "text": "Burj Khalifa"
         }
       ],
       "right": [
         {
           "id": "A",
-          "text": "Amerika Serikat – Amerika Utara"
+          "text": "Brasil"
         },
         {
           "id": "B",
-          "text": "Mesir – Afrika"
+          "text": "India"
         },
         {
           "id": "C",
-          "text": "Australia – Australia"
+          "text": "Italia"
         },
         {
           "id": "D",
-          "text": "Prancis – Eropa"
+          "text": "Uni Emirat Arab"
         }
       ],
       "answer": {
-        "1": "D",
-        "2": "B",
+        "1": "B",
+        "2": "C",
         "3": "A",
-        "4": "C"
+        "4": "D"
       },
-      "explanation": "Menara Eiffel berada di Prancis, Piramida Giza di Mesir, Patung Liberty di Amerika Serikat, dan Sydney Opera House di Australia.",
+      "explanation": "Taj Mahal di India, Colosseum di Italia, Christ the Redeemer di Brasil, dan Burj Khalifa di Uni Emirat Arab.",
       "score_max": 4,
       "score_per_pair": 1
     },
     {
       "id": "IPAS6-020",
       "number": 20,
-      "topic": "Kondisi geografis dan kehidupan masyarakat",
+      "topic": "Pengaruh kondisi geografis terhadap kehidupan",
       "difficulty": "hots",
       "type": "benar_salah",
-      "stimulus": "Eropa memiliki empat musim sehingga masyarakatnya menyesuaikan pakaian dan kegiatan sehari-hari dengan perubahan musim. Sementara itu, sebagian wilayah Mesir berada di sekitar Gurun Sahara yang kering. Banyak penduduk Mesir tinggal di sekitar Sungai Nil karena ketersediaan air.",
+      "stimulus": "Penduduk pegunungan mengembangkan perkebunan teh dan sayuran, sedangkan sebagian penduduk pesisir bekerja sebagai nelayan.",
       "question": "Tentukan benar atau salah setiap pernyataan berikut!",
       "statements": [
         {
           "id": "A",
-          "text": "Penduduk Mesir banyak tinggal di sekitar Sungai Nil karena tersedia air untuk kehidupan dan pertanian.",
+          "text": "Kondisi alam dapat memengaruhi mata pencaharian.",
           "answer": true
         },
         {
           "id": "B",
-          "text": "Kondisi geografis tidak memiliki pengaruh terhadap kebiasaan masyarakat.",
+          "text": "Semua wilayah harus memiliki jenis pekerjaan yang sama.",
           "answer": false
         },
         {
           "id": "C",
-          "text": "Masyarakat Eropa tidak perlu menyesuaikan pakaian dengan perubahan musim.",
-          "answer": false
+          "text": "Sumber daya alam dapat memengaruhi kegiatan ekonomi.",
+          "answer": true
         }
       ],
-      "explanation": "Kondisi alam memengaruhi pola permukiman, kegiatan ekonomi, pakaian, dan kebiasaan masyarakat.",
+      "explanation": "Bentang alam, iklim, dan sumber daya memengaruhi mata pencaharian serta pola kehidupan.",
       "score_max": 6,
       "score_per_statement": 2
     },
     {
       "id": "IPAS6-021",
       "number": 21,
-      "topic": "Negara maju dan potensi geografis",
+      "topic": "Pemanfaatan potensi geografis negara maju",
       "difficulty": "hots",
       "type": "pilihan_ganda_kompleks",
-      "stimulus": "Belanda merupakan negara maju yang memiliki sebagian wilayah berupa dataran rendah, bahkan berada di bawah permukaan laut. Negara tersebut mengembangkan berbagai teknologi untuk memanfaatkan dan mengatasi kondisi geografisnya.",
-      "question": "Pilih tepat 3 pernyataan yang benar!",
+      "stimulus": "Sebuah negara memiliki garis pantai panjang, angin kuat, pelabuhan modern, dan lahan pertanian terbatas.",
+      "question": "Kebijakan yang memanfaatkan potensi geografis secara tepat adalah .... (Pilih tepat 3.)",
       "options": [
         {
           "id": "A",
-          "text": "Dataran rendah dapat dimanfaatkan untuk pertanian bunga dan peternakan."
+          "text": "mengembangkan pembangkit listrik tenaga angin"
         },
         {
           "id": "B",
-          "text": "Belanda membangun tanggul karena sebagian wilayahnya berada di pegunungan tinggi."
+          "text": "memodernisasi pelabuhan untuk perdagangan"
         },
         {
           "id": "C",
-          "text": "Energi angin dapat dimanfaatkan untuk menghasilkan listrik."
+          "text": "mengembangkan teknologi pertanian"
         },
         {
           "id": "D",
-          "text": "Sistem pengendali air membantu melindungi wilayah dari ancaman banjir."
+          "text": "menutup seluruh pelabuhan"
         },
         {
           "id": "E",
-          "text": "Teknologi pengendali air tidak diperlukan karena seluruh wilayah Belanda berada di dataran tinggi."
+          "text": "mengabaikan kondisi alam dalam pembangunan"
         }
       ],
       "answer": [
         "A",
-        "C",
-        "D"
+        "B",
+        "C"
       ],
       "selection": {
         "min": 3,
         "max": 3,
         "exact": 3
       },
-      "explanation": "A benar: dataran rendah dapat dimanfaatkan untuk pertanian dan peternakan. B salah: tanggul diperlukan karena risiko banjir dan kondisi wilayah rendah. C benar: angin dapat dimanfaatkan sebagai sumber energi. D benar: teknologi pengendali air membantu melindungi wilayah. E salah: kondisi geografis Belanda justru membuat pengendalian air penting.",
+      "explanation": "Energi angin, pelabuhan, dan teknologi pertanian merupakan pemanfaatan potensi serta penyesuaian terhadap keterbatasan geografis.",
       "score_max": 6
     },
     {
@@ -869,29 +868,29 @@
       "topic": "Ciri khas negara dan benua",
       "difficulty": "sedang",
       "type": "pilihan_ganda",
-      "question": "Rina ingin mempelajari budaya kimono, bunga sakura, dan kenampakan alam Gunung Fuji. Negara dan benua yang tepat untuk dipelajari adalah ....",
+      "question": "Haka, burung kiwi, dan bentang alam pegunungan serta padang rumput merupakan ciri yang berkaitan dengan ....",
       "options": [
         {
           "id": "A",
-          "text": "Jepang di Benua Asia."
+          "text": "Selandia Baru di kawasan Oseania"
         },
         {
           "id": "B",
-          "text": "Tiongkok di Benua Eropa."
+          "text": "Mesir di Afrika"
         },
         {
           "id": "C",
-          "text": "India di Benua Afrika."
+          "text": "Kanada di Amerika Utara"
         },
         {
           "id": "D",
-          "text": "Thailand di Benua Amerika."
+          "text": "Norwegia di Eropa"
         }
       ],
       "answer": [
         "A"
       ],
-      "explanation": "Kimono, bunga sakura, dan Gunung Fuji merupakan ciri khas Jepang yang terletak di Benua Asia.",
+      "explanation": "Haka dan burung kiwi merupakan ciri khas yang berkaitan dengan Selandia Baru.",
       "score_max": 2
     },
     {
@@ -900,25 +899,26 @@
       "topic": "Perbandingan Benua Asia dan Australia",
       "difficulty": "hots",
       "type": "benar_salah",
+      "stimulus": "Kelompok belajar membandingkan Asia yang luas dan padat penduduk dengan Australia yang lebih kecil dan memiliki wilayah pedalaman kering.",
       "question": "Tentukan benar atau salah setiap pernyataan berikut!",
       "statements": [
         {
           "id": "A",
-          "text": "Benua Asia memiliki wilayah yang jauh lebih luas daripada Benua Australia.",
+          "text": "Asia memiliki pegunungan, dataran luas, dan wilayah kepulauan.",
           "answer": true
         },
         {
           "id": "B",
-          "text": "Jumlah penduduk Benua Australia lebih banyak daripada Benua Asia.",
-          "answer": false
+          "text": "Kondisi kering pedalaman Australia memengaruhi persebaran penduduk.",
+          "answer": true
         },
         {
           "id": "C",
-          "text": "Asia dan Australia memiliki keanekaragaman flora, fauna, dan budaya yang menjadi ciri khas masing-masing.",
-          "answer": true
+          "text": "Luas Australia lebih besar daripada Asia.",
+          "answer": false
         }
       ],
-      "explanation": "Asia jauh lebih luas dan berpenduduk lebih banyak daripada Australia. Kedua benua memiliki keunikan alam dan budaya masing-masing.",
+      "explanation": "Asia jauh lebih luas dan berpenduduk lebih banyak. Kondisi kering di pedalaman Australia turut memengaruhi persebaran penduduk.",
       "score_max": 6,
       "score_per_statement": 2
     },
@@ -928,29 +928,29 @@
       "topic": "ASEAN",
       "difficulty": "mudah",
       "type": "pilihan_ganda",
-      "question": "ASEAN merupakan organisasi kerja sama negara-negara yang berada di kawasan ....",
+      "question": "Salah satu tujuan ASEAN adalah ....",
       "options": [
         {
           "id": "A",
-          "text": "Asia Timur."
+          "text": "membentuk pemerintahan dunia"
         },
         {
           "id": "B",
-          "text": "Asia Tenggara."
+          "text": "meningkatkan kerja sama dan kestabilan Asia Tenggara"
         },
         {
           "id": "C",
-          "text": "Eropa Barat."
+          "text": "menghapus budaya negara anggota"
         },
         {
           "id": "D",
-          "text": "Afrika Utara."
+          "text": "membatasi hubungan antarnegara"
         }
       ],
       "answer": [
         "B"
       ],
-      "explanation": "ASEAN adalah organisasi kerja sama negara-negara di kawasan Asia Tenggara yang berdiri pada tahun 1967.",
+      "explanation": "ASEAN memperkuat kerja sama negara-negara Asia Tenggara dan kestabilan kawasan.",
       "score_max": 2
     },
     {
@@ -959,46 +959,46 @@
       "topic": "Ekspor dan impor",
       "difficulty": "sedang",
       "type": "pilihan_ganda",
-      "question": "Perhatikan beberapa kegiatan perdagangan berikut! (A) Indonesia membeli gandum dari Australia. (B) Indonesia menjual kopi ke Jepang. (C) Indonesia menjual karet ke Tiongkok. (D) Indonesia membeli batik dari Amerika Serikat. Kegiatan yang merupakan contoh ekspor Indonesia adalah ....",
+      "question": "Perusahaan Indonesia mengirim kopi ke Korea Selatan untuk dijual. Kegiatan tersebut disebut ....",
       "options": [
         {
           "id": "A",
-          "text": "A dan B."
+          "text": "impor"
         },
         {
           "id": "B",
-          "text": "B dan C."
+          "text": "ekspor"
         },
         {
           "id": "C",
-          "text": "A dan D."
+          "text": "konsumsi lokal"
         },
         {
           "id": "D",
-          "text": "C dan D."
+          "text": "produksi rumah tangga"
         }
       ],
       "answer": [
         "B"
       ],
-      "explanation": "Ekspor adalah kegiatan menjual barang ke luar negeri. Indonesia menjual kopi ke Jepang dan karet ke Tiongkok termasuk kegiatan ekspor.",
+      "explanation": "Ekspor adalah kegiatan menjual atau mengirim barang dari dalam negeri ke luar negeri.",
       "score_max": 2
     },
     {
       "id": "IPAS6-026",
       "number": 26,
-      "topic": "ASEAN, PBB, impor, dan globalisasi",
+      "topic": "Kerja sama internasional dan perdagangan",
       "difficulty": "sedang",
       "type": "menjodohkan",
-      "question": "Pasangkan istilah berikut dengan pengertiannya!",
+      "question": "Pasangkan istilah dengan pengertiannya.",
       "left": [
         {
           "id": "1",
-          "text": "ASEAN"
+          "text": "PBB"
         },
         {
           "id": "2",
-          "text": "PBB"
+          "text": "Ekspor"
         },
         {
           "id": "3",
@@ -1012,28 +1012,28 @@
       "right": [
         {
           "id": "A",
-          "text": "Proses mendunianya berbagai aspek kehidupan sehingga hubungan antarnegara semakin erat"
+          "text": "Meningkatnya keterhubungan antarnegara"
         },
         {
           "id": "B",
-          "text": "Organisasi kerja sama negara-negara Asia Tenggara"
+          "text": "Memasukkan barang dari luar negeri"
         },
         {
           "id": "C",
-          "text": "Organisasi internasional yang bertujuan menjaga perdamaian dan keamanan dunia"
+          "text": "Organisasi internasional untuk kerja sama dan perdamaian"
         },
         {
           "id": "D",
-          "text": "Kegiatan membeli barang dari luar negeri"
+          "text": "Menjual barang ke luar negeri"
         }
       ],
       "answer": {
-        "1": "B",
-        "2": "C",
-        "3": "D",
+        "1": "C",
+        "2": "D",
+        "3": "B",
         "4": "A"
       },
-      "explanation": "ASEAN berfokus pada kerja sama regional Asia Tenggara, PBB berlingkup internasional, impor berarti membeli barang dari luar negeri, dan globalisasi merupakan proses meningkatnya keterhubungan dunia.",
+      "explanation": "PBB merupakan organisasi internasional; ekspor menjual ke luar negeri; impor membeli dari luar negeri; globalisasi meningkatkan keterhubungan dunia.",
       "score_max": 4,
       "score_per_pair": 1
     },
@@ -1043,26 +1043,26 @@
       "topic": "Dampak globalisasi",
       "difficulty": "hots",
       "type": "benar_salah",
-      "stimulus": "Andi gemar menonton drama dari luar negeri dan membeli sepatu impor melalui internet. Namun, ia mulai jarang memainkan permainan tradisional dan tidak bangga memakai batik.",
+      "stimulus": "Lala mengikuti kelas menggambar daring dari pengajar negara lain dan mengenal makanan luar negeri, tetapi tetap mengikuti kegiatan memasak tradisional di rumah.",
       "question": "Tentukan benar atau salah setiap pernyataan berikut!",
       "statements": [
         {
           "id": "A",
-          "text": "Kemudahan membeli barang dari luar negeri melalui internet merupakan salah satu dampak globalisasi di bidang ekonomi.",
+          "text": "Teknologi digital memudahkan pertukaran pengetahuan lintas negara.",
           "answer": true
         },
         {
           "id": "B",
-          "text": "Berkurangnya minat terhadap permainan tradisional dan batik dapat menjadi dampak negatif globalisasi pada budaya.",
-          "answer": true
+          "text": "Mengenal budaya luar berarti harus meninggalkan budaya sendiri.",
+          "answer": false
         },
         {
           "id": "C",
-          "text": "Cara terbaik menghadapi globalisasi adalah menolak seluruh budaya asing tanpa mempelajarinya.",
-          "answer": false
+          "text": "Sikap selektif membantu mengambil manfaat globalisasi tanpa kehilangan identitas.",
+          "answer": true
         }
       ],
-      "explanation": "Globalisasi membawa peluang sekaligus tantangan. Masyarakat perlu bersikap selektif, mengambil manfaat positif, dan tetap melestarikan budaya sendiri.",
+      "explanation": "Globalisasi memudahkan pertukaran informasi dan budaya. Sikap selektif diperlukan agar budaya sendiri tetap dihargai.",
       "score_max": 6,
       "score_per_statement": 2
     },
@@ -1072,101 +1072,28 @@
       "topic": "Peran Indonesia dalam hubungan internasional",
       "difficulty": "hots",
       "type": "pilihan_ganda_kompleks",
-      "stimulus": "Indonesia aktif menjalin hubungan dengan berbagai negara. Indonesia menjadi tuan rumah Konferensi Asia Afrika pada 1955, ikut mendirikan ASEAN pada 1967, serta mengirim Pasukan Garuda dalam misi perdamaian PBB.",
-      "question": "Pilih tepat 3 pernyataan yang benar!",
+      "stimulus": "Indonesia mengikuti pertemuan negara Asia Tenggara, mengirim bantuan kemanusiaan, dan berpartisipasi dalam forum internasional.",
+      "question": "Tindakan tersebut menunjukkan peran Indonesia melalui .... (Pilih tepat 3.)",
       "options": [
         {
           "id": "A",
-          "text": "Indonesia berperan menjaga perdamaian dunia melalui misi PBB."
+          "text": "kerja sama regional"
         },
         {
           "id": "B",
-          "text": "Indonesia hanya menjadi penonton dalam kerja sama internasional."
+          "text": "solidaritas kemanusiaan"
         },
         {
           "id": "C",
-          "text": "Konferensi Asia Afrika menunjukkan peran Indonesia dalam mempererat solidaritas bangsa Asia dan Afrika."
+          "text": "partisipasi dalam forum internasional"
         },
         {
           "id": "D",
-          "text": "Indonesia termasuk salah satu negara pendiri ASEAN."
+          "text": "menutup hubungan diplomatik"
         },
         {
           "id": "E",
-          "text": "Indonesia tidak perlu menjalin kerja sama dengan negara lain."
-        }
-      ],
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "selection": {
-        "min": 3,
-        "max": 3,
-        "exact": 3
-      },
-      "explanation": "Indonesia aktif dalam kerja sama internasional, baik di tingkat regional maupun dunia. Perannya terlihat dalam Konferensi Asia Afrika, pendirian ASEAN, dan misi perdamaian PBB.",
-      "score_max": 6
-    },
-    {
-      "id": "IPAS6-029",
-      "number": 29,
-      "topic": "Dampak ekspor dan impor",
-      "difficulty": "hots",
-      "type": "pilihan_ganda",
-      "question": "Harga beras impor lebih murah sehingga banyak pedagang memilih membeli beras dari luar negeri. Akibatnya, petani lokal mengalami kesulitan menjual hasil panennya. Solusi yang paling tepat untuk mengatasi masalah tersebut adalah ....",
-      "options": [
-        {
-          "id": "A",
-          "text": "Menghentikan seluruh kegiatan perdagangan internasional."
-        },
-        {
-          "id": "B",
-          "text": "Mengatur impor secara tepat, meningkatkan kualitas dan hasil panen petani lokal, serta mengajak masyarakat membeli produk dalam negeri."
-        },
-        {
-          "id": "C",
-          "text": "Membiarkan petani lokal menghadapi masalah tanpa bantuan."
-        },
-        {
-          "id": "D",
-          "text": "Menyarankan seluruh petani berhenti menanam padi."
-        }
-      ],
-      "answer": [
-        "B"
-      ],
-      "explanation": "Masalah tersebut membutuhkan kebijakan yang seimbang. Pengaturan impor, peningkatan daya saing petani lokal, dan dukungan konsumen dapat membantu menjaga perekonomian dalam negeri.",
-      "score_max": 2
-    },
-    {
-      "id": "IPAS6-030",
-      "number": 30,
-      "topic": "Sikap menghadapi globalisasi",
-      "difficulty": "hots",
-      "type": "pilihan_ganda_kompleks",
-      "question": "Sekolah mengadakan kegiatan untuk meningkatkan kecintaan murid terhadap produk dan budaya Indonesia di tengah perkembangan globalisasi. Pilih tepat 3 kegiatan yang paling tepat dilakukan!",
-      "options": [
-        {
-          "id": "A",
-          "text": "Menggunakan dan mempromosikan produk lokal yang berkualitas."
-        },
-        {
-          "id": "B",
-          "text": "Mempelajari serta memperkenalkan kesenian dan budaya daerah kepada teman."
-        },
-        {
-          "id": "C",
-          "text": "Memanfaatkan media digital untuk memperkenalkan produk dan budaya Indonesia kepada masyarakat luas."
-        },
-        {
-          "id": "D",
-          "text": "Menolak seluruh perkembangan teknologi dari negara lain."
-        },
-        {
-          "id": "E",
-          "text": "Menganggap budaya bangsa lain tidak memiliki nilai positif."
+          "text": "menghindari kerja sama"
         }
       ],
       "answer": [
@@ -1179,7 +1106,81 @@
         "max": 3,
         "exact": 3
       },
-      "explanation": "Menghadapi globalisasi bukan berarti menutup diri. Kita dapat memanfaatkan teknologi dan perkembangan dunia untuk memperkenalkan produk serta budaya Indonesia, sekaligus mempertahankan identitas bangsa.",
+      "explanation": "Indonesia berperan melalui kerja sama regional, solidaritas kemanusiaan, dan partisipasi dalam forum internasional.",
+      "score_max": 6
+    },
+    {
+      "id": "IPAS6-029",
+      "number": 29,
+      "topic": "Dampak ekspor dan impor",
+      "difficulty": "hots",
+      "type": "pilihan_ganda",
+      "question": "Produk kerajinan bambu lokal bersaing dengan produk impor yang lebih murah. Langkah terbaik agar usaha lokal mampu bersaing adalah ....",
+      "options": [
+        {
+          "id": "A",
+          "text": "menghentikan seluruh perdagangan"
+        },
+        {
+          "id": "B",
+          "text": "meningkatkan mutu, desain, dan pemasaran digital"
+        },
+        {
+          "id": "C",
+          "text": "menurunkan kualitas bahan"
+        },
+        {
+          "id": "D",
+          "text": "menghentikan produksi"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Mutu, inovasi desain, dan pemasaran meningkatkan daya saing produk lokal.",
+      "score_max": 2
+    },
+    {
+      "id": "IPAS6-030",
+      "number": 30,
+      "topic": "Sikap menghadapi globalisasi dan pelestarian budaya",
+      "difficulty": "hots",
+      "type": "pilihan_ganda_kompleks",
+      "stimulus": "OSIS merancang kegiatan Bangga Produk dan Budaya Indonesia dengan memanfaatkan teknologi digital.",
+      "question": "Kegiatan yang paling mendukung tujuan tersebut adalah .... (Pilih tepat 3.)",
+      "options": [
+        {
+          "id": "A",
+          "text": "membuat video promosi kerajinan daerah"
+        },
+        {
+          "id": "B",
+          "text": "mengadakan pameran makanan tradisional"
+        },
+        {
+          "id": "C",
+          "text": "menggunakan produk lokal berkualitas"
+        },
+        {
+          "id": "D",
+          "text": "menyebarkan anggapan semua produk luar buruk"
+        },
+        {
+          "id": "E",
+          "text": "mengabaikan izin dan hak pencipta"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selection": {
+        "min": 3,
+        "max": 3,
+        "exact": 3
+      },
+      "explanation": "Promosi digital, pameran budaya, dan penggunaan produk lokal memperkuat kecintaan pada produk serta budaya Indonesia.",
       "score_max": 6
     }
   ]
